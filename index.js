@@ -1,4 +1,4 @@
-const express = require("express")
+import express from "express"
 const app = express()
 
 app.use(express.static("views"))
@@ -18,15 +18,17 @@ app.param("bookID", (req, res, next, id) => {
 })
 
 app.get("/", (req, res, next) => {
-    res.render("index")
+    res.render("index", {})
     return next();
 })
 
 app.get("/DetailedSearch", (req, res, next) => {
+    res.render("detailedSearch", {})
     return next();
 })
 
 app.get("/MageDB", (req, res, next) => {
+    res.render("mageDB")
     return next();
 })
 
@@ -51,6 +53,7 @@ app.post("/MageDB/Edit/:mageID", (req, res, next) => {
 })
 
 app.get("/BookDB", (req, res, next) => {
+    res.render("bookDB");
     return next();
 })
 

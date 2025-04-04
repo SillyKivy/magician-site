@@ -4,8 +4,9 @@
 */
 
 
-function display(req, res, next){
-
+function display(req, res, next, site, data){
+    res.render(site, data)
+    return next()
 }
 
 function handleWrongData(req, res, next){
