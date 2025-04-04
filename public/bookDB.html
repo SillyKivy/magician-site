@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookDB</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="backLink">
+            <a href="index.html">Back</a>
+        </div>
+        <table class="standard">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="idSearch">ID</label>
+                    <input id="idSearch" type="text" >
+                </td>
+                <td>
+                    <label for="mageidSearch">Mage ID</label>
+                    <input id="mageidSearch" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mageNameSearch">Mage Name</label>
+                    <input id="mageNameSearch" type="text" >
+                </td>
+                <td>
+                    <label for="titleSearch">Title</label>
+                    <input id="titleSearch" type="text" >   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="approvedSearch">Approvement</label>
+                    <input id="approvedSearch" type="text" >
+                </td>
+                <td>
+                    <label for="dateSearch">Publishment Date</label>
+                    <input id="dateSearch" type="text" >   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="priceSearch">Price</label>
+                    <input id="priceSearch" type="text" >
+                </td>
+                <td>
+                    <label for="magicTypeSearch">Magic Type</label>
+                    <input id="magicTypeSearch" type="text" >   
+                </td>
+            </tr>
+        </table>
+
+        <div class="standard">
+            <button><a href="bookAdd.html">Add New</a></button>
+        </div>
+
+        <table class="standard">
+            <tr>
+                <th class="bordered">ID</th>
+                <th class="bordered">Magician ID</th>
+                <th class="bordered">Magician Name</th>
+                <th class="bordered">Title</th>
+                <th class="bordered">Council Approvement</th>
+                <th class="bordered">Publish Date</th>
+                <th class="bordered">Price</th>
+                <th class="bordered">Magic Type</th>
+                <th>Edit and Delete Field</th>
+            </tr>
+            <tr>
+                <td class="bordered">1</td>
+                <td class="bordered">1</td>
+                <td class="bordered">Kanye West The Wise</td>
+                <td class="bordered">The truth about the magical council</td>
+                <td class="bordered">Not Approved</td>
+                <td class="bordered">2022.12.01</td>
+                <td class="bordered">0000</td>
+                <td class="bordered">Other</td>
+                <td class="buttons">
+                    <button><a href="bookEdit.html">Edit</a></button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

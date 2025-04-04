@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MageDB</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="backLink">
+            <a href="index.html">Back</a>
+        </div>
+
+        <table class="standard">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+               <td>
+                    <label for="idSearch">ID</label>
+                    <input id="idSearch" type="text">
+               </td> 
+               <td>
+                    <label for="nameSearch">Magician name</label>
+                    <input type="text" id="nameSearch">
+               </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="licenseSearch">License</label>
+                    <input type="text" id="licenseSearch">
+                </td>
+                <td>
+                    <label for="licenseDateSearch">License date</label>
+                    <input type="text" id="licenseDateSearch">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="magicSpecSearch">Magic Specialization</label>
+                    <input type="text" id="magicSpecSearch">
+                </td>
+                <td>
+                    <label for="genderSearch">Gender</label>
+                    <input type="text" id="genderSearch">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birthDateSearch">Birth date</label>
+                    <input type="text" id="birthDateSearch">
+                </td>
+                <td>
+                    <label for="ageSearch">Age</label>
+                    <input type="text" id="ageSearch">
+                </td>
+            </tr>
+        </table>
+
+        <div class="standard">
+            <button><a href="mageAdd.html">Add New</a></button>
+        </div>
+
+            <table class="standard">
+                <tr class="bordered">
+                    <th class="bordered">ID</th>
+                    <th class="bordered">Magician Name</th>
+                    <th class="bordered">Magic License</th>
+                    <th class="bordered">License Date</th>
+                    <th class="bordered">Magic Specialization</th>
+                    <th class="bordered">Gender</th>
+                    <th class="bordered">Birth Date</th>
+                    <th class="bordered">Age</th>
+                    <th>Edit and Delete Field</th>
+                </tr>
+                <tr class="bordered">
+                    <td class="bordered">1</td>
+                    <td class="bordered">Kanye West The Wise</td>
+                    <td class="bordered">Council Member</td>
+                    <td class="bordered">2025.02.06</td>
+                    <td class="bordered">Fire Martial Magic</td>
+                    <td class="bordered">Men</td>
+                    <td class="bordered">1977.06.08</td>
+                    <td class="bordered">47</td>
+                    <td class="buttons">
+                        <button><a href="mageEdit.html">Edit</a></button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table> 
+    </div>
+</body>
+</html>

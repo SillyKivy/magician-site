@@ -1,0 +1,53 @@
+body {
+    background-image: url("maxresdefault.jpg");
+    background-size: cover;
+}
+
+
+.page {
+    background-color: white;
+    margin: auto;
+    width: 75%;
+    overflow-y: scroll;
+}
+
+.links{
+    margin-left: 80%;
+    font-size: larger;
+    margin-top: 2%;
+}
+
+.backLink {
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: larger;
+}
+
+.positioning {
+    margin-bottom: 5%;
+}
+
+.standard{
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-right: 10%;
+    
+}
+
+
+table.standard{
+    overflow-x: auto;
+    height: 20px;
+    margin-bottom: 2%;
+}
+
+.buttons{
+    width: 15%;
+}
+
+
+.bordered{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+

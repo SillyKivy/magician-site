@@ -1,0 +1,79 @@
+Routing
+
+    GET / 
+        getMages
+        getBooks 
+        display(index.html)
+
+    GET /DetailedSearch
+        getMages
+        getBooks
+        display(detailedSearch.html)
+
+    GET /MageDB/?hiba=wrong_ID
+        getMages
+        display(mageDB.html)
+    POST /MageDB/Del/:mageID
+        getExactMage(mageID) 
+        deleteMage 
+    
+    GET /MageDB/Add/?hiba=new_mage_doesnt_align_with_expected_data_structure
+        display(mageAdd.html)
+        handleWrongData 
+    POST /MageDB/Add 
+        authenticateNewMage 
+        saveNewMage
+
+    GET /MageDB/Edit/:mageID/?hiba=updates_made_dont_align_with_expected_data_structure
+        getExactMage(mageID) 
+        display(mageEdit.html)
+        handleWrongData
+    POST /MageDB/Edit/:madeID
+        authenticateMage
+        saveMageEdit 
+
+    GET /BookDB/?hiba=wrong_ID
+        getBooks
+        display(bookDB.html)
+    POST /BookDB/Del/:bookID
+        getExactBook(bookID) 
+        deleteBook 
+
+    GET /BookDB/Add/?hiba==new_book_doesnt_align_with_expected_data_structure
+        display(boodAdd.html)
+        handleWrongData
+    POST /BookDB/Add 
+        authenticateNewBook 
+        saveNewBook 
+
+    GET /BookDB/Edit/:bookID/?hiba=updates_made_dont_align_with_expected_data_structure
+        getExactBook(boodID)
+        display(bookEdit.html)
+        handleWrongData
+    POST BookDB/Edit/:bookID
+        authenticateBook 
+        saveBookEdit 
+
+MiddleWares
+
+    middleWares/util.js
+        display(parameter.html) - megjeleníti a weboldalt-t
+        handleWrongData - a rosszul megadott adatot kezeljük le
+
+    middleWares/mage.js
+        getMages - kikeresi az összes mágust
+        getExactMage(mageID) - paraméter alapján az adatbázisból kiveszi az adott mágust
+        deleteMage - kitörli az adott mágust az adatbázisból
+        authenticateNewMage - leellenőrzi hogy az új mágus megfelel e az elvárt adatstruktúrának
+        saveNewMage - bejegyzi az új mágust az adatbázisba
+        authenticateMage - leellenőrzi hogy a változtatások megfelelnek e az elvárt adatstruktúrának
+        saveMageEdit - lementi a változtatásokat az adatbázisba
+
+    middleWares/book.js
+        getBooks - kikeresi az összes könyvet
+        getExactBook(bookID) - paraméter alapján az adatbázisból kiveszi az adott könyvet
+        deleteBook - kitörli az adott könyvet az adatbázisból
+        authenticateNewBook - leellenőrzi hogy az új könyv megfelel e az elvárt adatstruktúrának
+        saveNewBook - bejegyzi az új könyvet az adatbázisba
+        authenticateBook - leellenőrzi hogy a változtatások megfelelnek e az elvárt adatstruktúrának
+        saveBookEdit - lementi a változtatásokat az adatbázis

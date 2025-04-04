@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Edit</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="backLink">
+            <a href="bookDB.html">Back</a>
+        </div>
+
+        <table class="standard">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id">ID</label>
+                    <span class="bordered" id="id">1</span>
+                </td>
+                <td>
+                    <label for="mageid">Mage ID</label>
+                    <span class="bordered" id="mageid">1</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="title">Title</label>
+                    <span class="bordered" id="title">The truth about the magical council</span>  
+                </td>
+                <td>
+                    <label for="date">Publishment Date</label>
+                    <span class="bordered" id="date">2022.12.01</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mageName">Mage Name</label>
+                    <input id="mageName" type="text" placeholder="Kanye West The Wise"> 
+                </td>
+                <td>
+                    <label for="approved">Approvement</label>
+                    <input id="approved" type="checkbox"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="price">Price</label>
+                    <input id="price" type="text" placeholder="0000">
+                </td>
+                <td>
+                    <label for="magicType">Magic Type</label>
+                    <input id="magicType" type="text" placeholder="Other">   
+                </td>
+            </tr>
+        </table>
+
+        <button class="standard"><a href="bookDB.html">submit</a></button>
+    </div>
+</body>
+</html>
