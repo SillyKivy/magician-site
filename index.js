@@ -18,6 +18,7 @@ app.param("bookID", (req, res, next, id) => {
 })
 
 app.get("/", (req, res, next) => {
+    res.render("index")
     return next();
 })
 
